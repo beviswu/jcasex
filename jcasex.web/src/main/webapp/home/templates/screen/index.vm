@@ -1,0 +1,8 @@
+$page.setTitle("1It works.")
+
+<h1>1It works.</h1>
+
+<ol>
+<li>
+    <h2>2Simple Page without Template2</h2>
+</ol>

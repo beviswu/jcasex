@@ -1,0 +1,263 @@
+<div class="container" style="margin-top:65px;">
+<h1 class="buttom_border">表单样式<small>from demos</small></h1>
+
+<form class="form-horizontal">
+	<div class="row">
+		<div class="form-group">
+		    <label for="account" class="col-xs-2 control-label">登陆帐号</label>
+		    <div class="col-xs-5">
+		    	<input type="text" class="form-control input-sm" id="account" placeholder="登陆帐号">
+		    </div>
+	  	</div>
+	</div>
+	<div class="row">
+	  	<div class="form-group">
+	    	<label for="nick" class="col-xs-2 control-label">昵称</label>
+	    	<div class="col-xs-5">
+	    		<input type="text" class="form-control input-sm" id="nick" placeholder="昵称">
+	    	</div>
+	  	</div>
+  	</div>
+	<div class="row">
+	  	<div class="form-group has-error">
+	    	<label for="nick" class="col-xs-2 control-label">昵称（错误提示）</label>
+	    	<div class="col-xs-5">
+	    		<input type="text" class="form-control input-sm" id="nick" placeholder="昵称">
+	    	</div>
+	  	</div>
+  	</div>
+	<div class="row">
+	  	<div class="form-group has-warning">
+	    	<label for="nick" class="col-xs-2 control-label">昵称（警告提示）</label>
+	    	<div class="col-xs-5">
+	    		<input type="text" class="form-control input-sm" id="nick" placeholder="昵称">
+	    	</div>
+	  	</div>
+  	</div>
+	<div class="row">
+	  	<div class="form-group has-success">
+	    	<label for="nick" class="col-xs-2 control-label">昵称（成功提示）</label>
+	    	<div class="col-xs-5">
+	    		<input type="text" class="form-control input-sm" id="nick" placeholder="昵称">
+	    	</div>
+	  	</div>
+  	</div>
+  	<div class="row">
+	  	<div class="form-group">
+	    	<label for="password" class="col-xs-2 control-label">密码</label>
+	    	<div class="col-xs-5">
+	    		<input type="password" class="form-control input-sm" id="password" placeholder="密码">
+	    	</div>
+	  	</div>
+  	</div>
+  	
+  	<div class="row">
+	  	<div class="form-group">
+	    	<label for="level" class="col-xs-2 control-label">会员等级</label>
+	    	<div class="col-xs-5">
+	    		<select class="form-control">
+				  	<option selected="selected">1</option>
+				  	<option>2</option>
+				  	<option>3</option>
+				  	<option>4</option>
+				  	<option>5</option>
+				</select>
+	    	</div>
+	  	</div>
+  	</div>
+  	
+  	<div class="row">
+	  	<div class="form-group">
+	    	<label for="birthday" class="col-xs-2 control-label">出生日期</label>
+	    	<div class="col-xs-5">
+	    		<input type="datetime" class="form-control input-sm" id="birthday" placeholder="出生日期" readonly="readonly">
+	    	</div>
+	    	
+	  	</div>
+  	</div>
+  	
+  	<div class="row">
+	  	<div class="form-group">
+	    	<label for="enbaled" class="col-xs-2 control-label">是否启用</label>
+	    	<div class="col-xs-5">
+	    		<label class="radio-inline">
+					<input type="radio" name="enbaled" value="true" checked="checked"> 启用
+				</label>
+				<label class="radio-inline">
+				  	<input type="radio" name="enbaled" value="false"> 不启用
+				</label>
+	    	</div>
+	  	</div>
+  	</div>
+  	
+  	<div class="row">
+	  	<div class="form-group">
+	  		<label for="enbaled" class="col-xs-2 control-label">RGB</label>
+	    	<div class="col-xs-5 checkbox">
+		  		<label>
+			    	<input type="checkbox" value="red">red
+			  	</label>	
+				<label>
+			    	<input type="checkbox" value="green">green
+			  	</label>
+				<label>
+					<input type="checkbox" value="blue" disabled>blue
+		 		</label>
+		 	</div>
+		</div>
+	</div>
+	
+  	<div class="row">
+	  	<div class="form-group">
+	  		<label for="enbaled" class="col-xs-2 control-label">RGB</label>
+	    	<div class="col-xs-5 checkbox">
+		  		<textarea class="form-control" rows="3"></textarea>
+		 	</div>
+		</div>
+	</div>
+  	
+  	<div class="row">
+	  	<div class="form-group">
+	    	<label for="nick" class="col-xs-2 control-label">数字区间</label>
+	    	<div class="col-xs-2">
+	    		<input type="text" class="form-control input-sm" id="num-min" placeholder="min number">
+	    	</div>
+	    	<div class="col-xs-2">
+	    	<input type="text" class="form-control input-sm" id="num-max" placeholder="max number">
+	    	</div>
+	  	</div>
+  	</div>
+  	
+	<div class="row">
+	  	<div class="form-group">
+	    	<label for="nick" class="col-xs-2 control-label">按钮</label>
+	    	<div class="col-xs-4">
+	    		<a class="btn btn-default" href="#" role="button">Link</a>
+				<button class="btn btn-default" type="submit">Button</button>
+				<input class="btn btn-default" type="button" value="Input">
+				<input class="btn btn-default" type="submit" value="Submit">
+	    	</div>
+	  	</div>
+  	</div>
+  	
+  	<div class="row">
+	  	<div class="form-group">
+	    	<label for="nick" class="col-xs-2 control-label">按钮（带颜色）</label>
+	    	<div class="col-xs-4">
+				<!-- Standard button -->
+				<button type="button" class="btn btn-default">（默认样式）Default</button>
+				
+				<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+				<button type="button" class="btn btn-primary">（首选项）Primary</button>
+				
+				<!-- Indicates a successful or positive action -->
+				<button type="button" class="btn btn-success">（成功）Success</button>
+				
+				<!-- Contextual button for informational alert messages -->
+				<button type="button" class="btn btn-info">（一般信息）Info</button>
+				
+				<!-- Indicates caution should be taken with this action -->
+				<button type="button" class="btn btn-warning">（警告）Warning</button>
+				
+				<!-- Indicates a dangerous or potentially negative action -->
+				<button type="button" class="btn btn-danger">（危险）Danger</button>
+				
+				<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+				<button type="button" class="btn btn-link">（链接）Link</button>
+	    	</div>
+	  	</div>
+  	</div>
+  	
+  	
+	<div class="row">
+	  	<div class="form-group">
+	    	<label for="nick" class="col-xs-2 control-label">按钮（大小）</label>
+	    	<div class="col-xs-4">
+				<p>
+				  <button type="button" class="btn btn-primary btn-lg">（大按钮）Large button</button>
+				  <button type="button" class="btn btn-default btn-lg">（大按钮）Large button</button>
+				</p>
+				<p>
+				  <button type="button" class="btn btn-primary">（默认尺寸）Default button</button>
+				  <button type="button" class="btn btn-default">（默认尺寸）Default button</button>
+				</p>
+				<p>
+				  <button type="button" class="btn btn-primary btn-sm">（小按钮）Small button</button>
+				  <button type="button" class="btn btn-default btn-sm">（小按钮）Small button</button>
+				</p>
+				<p>
+				  <button type="button" class="btn btn-primary btn-xs">（超小尺寸）Extra small button</button>
+				  <button type="button" class="btn btn-default btn-xs">（超小尺寸）Extra small button</button>
+				</p>
+	    	</div>
+	  	</div>
+  	</div>
+  	
+	<div class="row">
+	  	<div class="form-group">
+	    	<label for="nick" class="col-xs-2 control-label">按钮（禁用）</label>
+	    	<div class="col-xs-4">
+				<button type="button" class="btn btn-lg btn-primary" disabled="disabled">Primary button</button>
+				<button type="button" class="btn btn-default btn-lg" disabled="disabled">Button</button>
+	    	</div>
+	  	</div>
+  	</div>
+  	
+	<div class="row">
+	  	<div class="form-group">
+	  		<label for="enbaled" class="col-xs-2 control-label">代码</label>
+	    	<div class="col-xs-5 checkbox">
+		  		press <kbd>ctrl + D</kbd>
+		 	</div>
+		</div>
+	</div>
+  	
+  	<div class="row">
+	  	<div class="form-group">
+	  		<label for="enbaled" class="col-xs-2 control-label">代码块</label>
+	    	<div class="col-xs-5 checkbox">
+		  		<var>var a = b + c </var>
+		 	</div>
+		</div>
+	</div>
+	
+  	<div class="row">
+	  	<div class="form-group">
+	  		<label for="enbaled" class="col-xs-2 control-label">输入框组</label>
+	    	<div class="col-xs-5 checkbox">
+		  		 <div class="input-group">
+			      	<div class="input-group-btn">
+			        	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+			        	<ul class="dropdown-menu">
+			          		<li><a href="#">Action</a></li>
+			          		<li><a href="#">Another action</a></li>
+					       	<li><a href="#">Something else here</a></li>
+					       	<li role="separator" class="divider"></li>
+					       	<li><a href="#">Separated link</a></li>
+			        	</ul>
+			      	</div>
+			      	<input type="text" class="form-control" aria-label="...">
+			    </div>
+			</div>
+		</div>
+	</div>
+  	
+  	<div class="row">
+  		<div class="col-xs-2">&nbsp;</div>
+  		<div class="col-xs-4">
+  			<button type="submit" class="btn btn-default">提交</button>
+  			<button type="reset" class="btn btn-default">重置</button>
+  		</div>
+  	<div>
+</form>
+
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#birthday').datetimepicker({
+	    format: 'yyyy-mm-dd hh:ii:ss',
+	    autoclose: true,
+	    todayBtn: true
+	});
+});
+</script>

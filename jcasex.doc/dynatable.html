@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="dynatable/jquery.dynatable.css" />
+<!--script type="text/javascript" src="./jquery/jquery-1.11.3.min.js"></script-->
+<script type="text/javascript" src="dynatable/vendor/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="dynatable/jquery.dynatable.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+var myRecords =[{
+	"name":"name2",
+	"age":"age2",
+	"fav":"fav2"
+}];
+	
+$(document).ready(function(){
+	$("#dtinstance").bind("dynatable:init",function(){
+		$("th[data-dynatable-column=name]").text("案件号");
+		//console.log($("th[data-dynatable-column=name]").text());
+	}).dynatable({
+		 table: {
+    		defaultColumnIdStyle: 'underscore'
+  		},
+  		dataset: {
+    		records: myRecords
+  		},
+  		features: {
+                paginate: true,
+                recordCount: true,
+                sorting: false,
+                search: true,
+                perPageSelect:false,
+                pushState: false
+            }
+	});
+});
+</script>
+
+
+<table id="dtinstance"  border="1">
+  	<thead>
+	    <tr>
+	        <th>name</th>
+	        <th>age</th>
+	        <th>fav</th>
+	    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    	<td>name1</td>
+		<td>age1</td>
+	    <td>fav1</td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
