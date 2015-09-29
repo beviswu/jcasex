@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 public class EmployeeAction {
 	public void test(){
 		System.out.println("d");
+		System.out.println("d");
 	}
 
 }
