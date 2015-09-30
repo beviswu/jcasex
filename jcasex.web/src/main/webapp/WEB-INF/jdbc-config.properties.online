@@ -1,4 +1,0 @@
-jcasex.datasource.driverclass=com.mysql.jdbc.Driver
-jcasex.datasource.jdbcUrl=r9698beviswu.mysql.aliyun.com
-jcasex.datasource.user=r5410beviswu
-jcasex.datasource.password=mysql1218

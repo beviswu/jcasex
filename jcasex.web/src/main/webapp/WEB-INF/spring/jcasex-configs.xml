@@ -19,7 +19,7 @@
 	<bean id="contextConfigs" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
 		<property name="locations">
 			<list>
-				<value>WEB-INF/global-config.properties</value>
+				<value>WEB-INF/jdbc-config.properties</value>
 			</list>
 		</property>
 	</bean>
