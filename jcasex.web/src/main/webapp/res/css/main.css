@@ -1,0 +1,196 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #222222;
+    background-color: white;
+}
+
+.jcasex-width-full{
+	 width:100%;
+}
+
+/***********************************/
+
+nav.navbar-top {
+	margin-bottom: 0px;
+	border:0;
+	height:50px;
+}
+
+nav.navbar-top .navbar-top-main{
+
+}
+nav.navbar-top .navbar-top-logo{
+	background-color: #373d47;
+    border-color: #373d47;
+}
+
+
+nav.navbar-top .navbar-top-main .navbar-top-logo a {
+    float: left;
+    height: 50px;
+    width: 100%;
+    padding: 7px 8px;
+    overflow: hidden;
+}
+
+nav.navbar-top .navbar-top-main .navbar-top-logo a span {
+    width: 36px;
+    height: 36px;
+    float: left;
+	padding-top: 8px;
+    padding-left: 24px;
+}
+nav.navbar-top .navbar-top-main .navbar-top-logo a .logo-text {
+    width: 36px;
+    height: 36px;
+    float: left;
+}
+
+nav.navbar-top .navbar-top-main .navbar-top-logo a .logo-text h3 {
+    width: 158px;
+    float: left;
+    margin: 0;
+    margin-left: 14px;
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: normal;
+}
+
+nav.navbar-top .navbar-top-main .navbar-top-logo a {
+    color: #979da7;
+}
+
+nav.navbar-top .navbar-top-main .navbar-top-logo:hover a {
+    color: #FFF;
+}
+
+
+
+nav.navbar-top .navbar-top-main .navbar-top-content {
+    border-bottom: 1px solid #EEE;
+    padding-right: 35px;
+    height: 50px;
+}
+
+
+nav.navbar-top .navbar-top-main .navbar-top-content .navbar-collapse {
+    float: right;
+}
+nav.navbar-top .navbar-top-main .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    max-height: 340px;
+}
+
+nav.navbar-top .navbar-top-main  .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+nav.navbar-top .navbar-top-main .navbar-top-content .title {
+    margin: 0;
+    padding: 0 15px 0 35px;
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: bold;
+    color: #444;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+nav.navbar-top .navbar-top-content .title a {
+    color: #444;
+}
+
+nav.navbar-top .navbar-top-main .navbar-top-content .nav>li {
+    position: relative;
+    white-space: nowrap;
+}
+
+nav.navbar-top .navbar-top-main .navbar-top-content .nav>li>a {
+    color: #888;
+    font-size: 14px;
+    padding: 0;
+    background-color: #f5f5f5;
+    margin: 11px 0;
+    margin-left: 10px;
+    border-radius: 40px;
+    height: 28px;
+    width: 28px;
+    line-height: 28px;
+    text-align: center;
+}
+
+
+nav.navbar-top .navbar-top-main .navbar-top-content .search .search-input {
+    width: 220px;
+    background-image: url(/res/img/icon-search.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    height: inherit;
+    padding: 4px 6px;
+    padding-left: 25px;
+    font-size: 13px;
+    background-color: #f5f5f5;
+    border-color: #f5f5f5;
+}
+
+/*******************************/
+
+.nav-side-bar{
+	position: fixed;
+    top: 50px;
+    bottom: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    left: 0;
+    height: 100%;
+	background-color: #373d47;
+    border-color: #373d47;
+}
+
+.nav-side-bar .nav-side {
+    margin-top: 0px;/**如果top bar固定之后，这个可以调**/
+    margin-bottom: 50px;
+    transition-duration: .3s;
+    list-style: none;
+    overflow: hidden;
+}
+
+.nav-side-bar nav .nav-side li a {
+    color: #979da7;
+}
+
+.nav-side-bar nav .nav-side li.active a {
+    color: #FFF;
+    background: #24272d;
+}
+
+
+
+.sidebar-user {
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    overflow: hidden;
+}
+
+
+/**********************/
+.jcasex-footer{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 100px;
+    color: #767676;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+}
+
+
+/******/
+.jcasex-main-section{
+	margin-bottom: 30px;
+}
+
