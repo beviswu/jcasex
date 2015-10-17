@@ -1,15 +1,34 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html lang="zh-CN">
+
 <head>
-#showHead ("2My Simple Webx Application")
+<meta charset="utf-8">
+#showHead ("jcasex admin index page")
+
+<link rel="stylesheet" href="/lib/bootstrap-3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="/lib/bootstrap-3.3.5/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="/lib/font-awesome/font-awesome-4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/res/css/main.css">
+
+<script src="/lib/jquery/jquery-1.11.3.min.js"></script>
+<script src="/lib/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 </head>
 
 <body #bodyAttributes ()>
 
-$screen_placeholder
+$control.setTemplate("home:nav-top.vm")
 
-<hr/>
-<p>[<a href="$homeLink.setTarget("index")">Home</a>] [<a href="$homeLink">3Dev Home</a>]</p>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-3 nav-side-bar">
+			$control.setTemplate("home:nav-side.vm")
+		</div>
+		<div class="col-md-9">
+			$screen_placeholder
+		</div>
+	</div>
+</div>
 
+$control.setTemplate("home:footer.vm")
 </body>
 </html>

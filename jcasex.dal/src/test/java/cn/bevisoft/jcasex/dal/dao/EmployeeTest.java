@@ -25,7 +25,7 @@ public class EmployeeTest extends AbstractTransactionalJUnit4SpringContextTests 
     @Test
     public void testCase01_InsertAndSelect() {
         Employee employee = new Employee();
-        employee.setLoginAccount("xubo.wuxb");
+        employee.setAccount("xubo.wuxb");
         employee.setCreatorId(1232L);
         employee.setPassword("123456");
         employee.setNickname("dsfdsf");
@@ -37,7 +37,7 @@ public class EmployeeTest extends AbstractTransactionalJUnit4SpringContextTests 
         Assert.assertNotNull(actEmployee);
         
         Assert.assertEquals(EntityStatus.ENABLED.getCode(), actEmployee.getStatus().getCode());
-        Assert.assertEquals(employee.getLoginAccount(), actEmployee.getLoginAccount());
+        Assert.assertEquals(employee.getAccount(), actEmployee.getAccount());
     }
 
 }
