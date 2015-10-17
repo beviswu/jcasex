@@ -4,6 +4,9 @@ http://docs.spring.io/spring/docs/3.2.7.RELEASE/spring-framework-reference/htmls
 
 ===
 
+http://gitlab.alipay-inc.com/
+
+
 风格：
 1.编辑框：新版新浪博客的风格，内网绩效编辑的风格
 2.整个布局：阿里云“管理控制台”，左侧菜单
@@ -17,6 +20,8 @@ https://plus.google.com/+BevisWu/about 的panel样式和输入框
 
 http://themes.getbootstrap.com/products/dashboard
 http://themes.getbootstrap.com/products/application
+
+http://openwebx.org/docs/Webx3_Guide_Book.html
 
 
 
@@ -41,6 +46,19 @@ http://www.jikexueyuan.com/path/bootstrap/
 
 
 http://www.ibm.com/developerworks/cn/opensource/os-cn-mybatis
+
+
+
+datatables中文网
+http://dt.thxopen.com
+
+datatables
+https://www.datatables.net
+
+
+样式：
+右边的菜单样式不错：
+http://datatables.net/plug-ins/filtering/#How-to-use 
 
 
 
