@@ -1,0 +1,12 @@
+{
+	"data":[
+		#foreach($accountInfo in $!JCASEX_DATA_VO.data)
+		{
+			"id":"$!accountInfo.id",
+			"account":"$!accountInfo.account",
+			"nick":"$!accountInfo.nick"
+		}
+		#if($!velocityCount < $!JCASEX_DATA_VO.data.size()),#end
+		#end
+	]
+}
