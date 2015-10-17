@@ -1,8 +1,8 @@
-$page.setTitle("1It works.")
+$page.setTitle("powered by jcasex.com")
 
-<h1>1It works.</h1>
+<div class="container">
 
-<ol>
-<li>
-    <h2>2Simple Page without Template2</h2>
-</ol>
+asdfasdf
+AAA
+
+</div> <!-- /container -->

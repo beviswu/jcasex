@@ -11,9 +11,9 @@ public class Employee extends Entity {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * 用户名
+	 * 帐号
 	 */
-	private String loginAccount;
+	private String account;
 
 	/**
 	 * 密码(MD5加密)
@@ -25,12 +25,13 @@ public class Employee extends Entity {
 	 */
 	private String nickname;
 
-	public String getLoginAccount() {
-		return loginAccount;
+
+	public String getAccount() {
+		return account;
 	}
 
-	public void setLoginAccount(String loginAccount) {
-		this.loginAccount = loginAccount;
+	public void setAccount(String account) {
+		this.account = account;
 	}
 
 	public static long getSerialversionuid() {

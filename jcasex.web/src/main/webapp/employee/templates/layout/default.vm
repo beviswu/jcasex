@@ -3,43 +3,33 @@
 
 <head>
 <meta charset="utf-8">
-#showHead ("jcasex employee")
+#showHead ("employee page powered by jcasex")
 
-<!--
-<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-<link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.7/css/jquery.dataTables.css">
-<link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/plug-ins/28e7751dbec/integration/bootstrap/3/dataTables.bootstrap.css">
+<link rel="stylesheet" href="/lib/bootstrap-3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="/lib/bootstrap-3.3.5/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="/res/css/main.css">
 
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script type="text/javascript" charset="utf8" src="http://cdn.datatables.net/1.10.7/js/jquery.dataTables.js"></script>
-<script type="text/javascript" charset="utf8" src="http://cdn.datatables.net/plug-ins/28e7751dbec/integration/bootstrap/3/dataTables.bootstrap.js"></script>
--->
-
-<link rel="stylesheet" href="/res/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="/res/bootstrap/css/bootstrap-theme.min.css">
-<link rel="stylesheet" type="text/css" href="/res/datatables/v1.10.7/css/jquery.dataTables.css">
-<!--link rel="stylesheet" type="text/css" href="/res/datatables/integration/bootstrap/3/dataTables.bootstrap.css"-->
-<link rel="stylesheet" href="/res/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
-<link rel="stylesheet" href="/res/jcasex/css/common.css">
-
-<script src="/res/jquery/jquery-1.11.3.min.js"></script>
-<script src="/res/bootstrap/js/bootstrap.min.js"></script>
-<script src="/res/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
-<script src="/res/datatables/v1.10.7/js/jquery.dataTables.min.js"></script>
-<!--script type="text/javascript" charset="utf8" src="/res/datatables/integration/bootstrap/3/dataTables.bootstrap.js"></script-->
-
-
-
-
+<script src="/lib/jquery/jquery-1.11.3.min.js"></script>
+<script src="/lib/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 </head>
 
 <body #bodyAttributes ()>
 
-$control.setTemplate("admin:menu.vm")
+$control.setTemplate("home:nav-top.vm")
 
-$screen_placeholder
+<div class="clearfix navbar-separation">...</div>
 
+<div class="container">
+	<div class="row">
+		<div class="col-md-9">
+			$screen_placeholder
+		</div>
+		<div class="col-md-3">
+			$control.setTemplate("home:nav-side.vm")
+		</div>
+	</div>
+</div>
+
+$control.setTemplate("home:footer.vm")
 </body>
 </html>
