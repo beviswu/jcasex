@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	
-	<groupId>cn.bevisoft.jcasex</groupId>
+	<groupId>cn.jcasex</groupId>
 	<artifactId>jcasex.parent</artifactId>
 	<name>java casex parent</name>
 	<packaging>pom</packaging>
@@ -18,266 +18,22 @@
 	</modules>
 
 	<properties>
-		<java.version>1.6</java.version>
-		<java.encoding>UTF-8</java.encoding>
-		<webx-version>3.2.4</webx-version>
-		<spring-version>3.2.7.RELEASE</spring-version>
-		<springext-plugin-version>1.2</springext-plugin-version>
-		<jetty-version>8.1.13.v20130916</jetty-version>
-		<project.build.sourceEncoding>${java.encoding}</project.build.sourceEncoding>
-		<productionMode>false</productionMode>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
 	</properties>
 
 	<dependencyManagement>
 		<dependencies>
-			<!-- ================================================= -->
-			<!-- Webx框架依赖 -->
-			<!-- ================================================= -->
-			<dependency>
-				<groupId>com.alibaba.citrus</groupId>
-				<artifactId>citrus-webx-all</artifactId>
-				<version>${webx-version}</version>
-			</dependency>
-			<!-- ================================================= -->
-			<!-- 日志及相关依赖（用slf4j+logback代替jcl+log4j） -->
-			<!-- ================================================= -->
-			<dependency>
-				<groupId>org.slf4j</groupId>
-				<artifactId>slf4j-api</artifactId>
-				<version>1.7.5</version>
-			</dependency>
-			<!-- 将现有的jakarta commons logging的调用转换成lsf4j的调用。 -->
-			<dependency>
-				<groupId>org.slf4j</groupId>
-				<artifactId>jcl-over-slf4j</artifactId>
-				<version>1.7.5</version>
-			</dependency>
-			<!-- Hack：确保commons-logging的jar包不被引入，否则将和jcl-over-slf4j冲突 -->
-			<dependency>
-				<groupId>commons-logging</groupId>
-				<artifactId>commons-logging</artifactId>
-				<version>1.1.3</version>
-				<scope>provided</scope>
-			</dependency>
-			<!-- slf4j的实现：logback，用来取代log4j。更快、更强！ -->
-			<dependency>
-				<groupId>ch.qos.logback</groupId>
-				<artifactId>logback-classic</artifactId>
-				<version>1.0.13</version>
-				<scope>runtime</scope>
-			</dependency>
-			<!-- ================================================= -->
-			<!-- Spring框架 -->
-			<!-- ================================================= -->
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-core</artifactId>
-				<version>${spring-version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-beans</artifactId>
-				<version>${spring-version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-aop</artifactId>
-				<version>${spring-version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-context</artifactId>
-				<version>${spring-version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-context-support</artifactId>
-				<version>${spring-version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-tx</artifactId>
-				<version>${spring-version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-jdbc</artifactId>
-				<version>${spring-version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-orm</artifactId>
-				<version>${spring-version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-web</artifactId>
-				<version>${spring-version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-webmvc</artifactId>
-				<version>${spring-version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-test</artifactId>
-				<version>${spring-version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.mybatis</groupId>
-				<artifactId>mybatis</artifactId>
-				<version>3.2.6</version>
-			</dependency>
-			<dependency>
-				<groupId>org.mybatis</groupId>
-				<artifactId>mybatis-spring</artifactId>
-				<version>1.2.2</version>
-			</dependency>
-			<!-- ================================================= -->
-			<!-- 单元测试 -->
-			<!-- ================================================= -->
-			<dependency>
-				<groupId>com.alibaba.citrus</groupId>
-				<artifactId>citrus-test-all</artifactId>
-				<version>${webx-version}</version>
-				<scope>test</scope>
-			</dependency>
-			<!-- ======================================== -->
-			<!-- 其它第三方依赖 -->
-			<!-- ======================================== -->
-			<dependency>
-				<groupId>javax.servlet</groupId>
-				<artifactId>javax.servlet-api</artifactId>
-				<version>3.1.0</version>
-				<scope>provided</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.velocity</groupId>
-				<artifactId>velocity</artifactId>
-				<version>1.7</version>
-			</dependency>
-			<dependency>
-				<groupId>org.freemarker</groupId>
-				<artifactId>freemarker</artifactId>
-				<version>2.3.20</version>
-			</dependency>
-			<dependency>
-				<groupId>com.alibaba.appengine</groupId>
-				<artifactId>services-api</artifactId>
-				<version>1.0.1</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.commons</groupId>
-				<artifactId>commons-lang3</artifactId>
-				<version>3.3.1</version>
-			</dependency>
-			<dependency>
-				<groupId>commons-collections</groupId>
-				<artifactId>commons-collections</artifactId>
-				<version>3.2.1</version>
-			</dependency>
-			<dependency>
-				<groupId>mysql</groupId>
-				<artifactId>mysql-connector-java</artifactId>
-				<version>5.1.34</version>
-			</dependency>
-			<dependency>
-				<groupId>c3p0</groupId>
-				<artifactId>c3p0</artifactId>
-				<version>0.9.1.2</version>
-			</dependency>
-			<dependency>
-				<groupId>commons-codec</groupId>
-				<artifactId>commons-codec</artifactId>
-				<version>1.9</version>
-			</dependency>
-
-			<!-- ================================================= -->
-			<!-- 单元测试 -->
-			<!-- ================================================= -->
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
 				<version>4.11</version>
 				<scope>test</scope>
-			</dependency> 
-			<dependency>
-				<groupId>org.mockito</groupId>
-				<artifactId>mockito-all</artifactId>
-				<version>1.9.5</version>
-				<scope>test</scope>
-			</dependency>
-			<dependency>
-				<groupId>com.alibaba.citrus</groupId>
-				<artifactId>citrus-test-all</artifactId>
-				<version>${webx-version}</version>
-				<scope>test</scope>
-			</dependency>
-
-			
-			<!--二方库-->
-			<dependency>
-				<groupId>cn.bevisoft.jcasex</groupId>
-				<artifactId>jcasex.common</artifactId>
-				<version>${project.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>cn.bevisoft.jcasex</groupId>
-				<artifactId>jcasex.dal</artifactId>
-				<version>${project.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>cn.bevisoft.jcasex</groupId>
-				<artifactId>jcasex.biz</artifactId>
-				<version>${project.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>cn.bevisoft.jcasex</groupId>
-				<artifactId>jcasex.demo</artifactId>
-				<version>${project.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	<build>
-		<plugins>
-			<plugin>  
-				<groupId>org.apache.maven.plugins</groupId>  
-				<artifactId>maven-compiler-plugin</artifactId>  
-				<configuration>  
-					<source>${java.version}</source>  
-					<target>${java.version}</target>  
-					<encoding>${java.encoding}</encoding>
-				</configuration>  
-			</plugin> 
-			<plugin>
-                <artifactId>maven-source-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>attach-sources</id>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-			<plugin>  
-				<groupId>org.apache.maven.plugins</groupId>  
-				<artifactId>maven-eclipse-plugin</artifactId>  
-				<version>2.6</version>  
-				<configuration>  
-					<additionalConfig>  
-						<file>  
-							<name>.settings/org.eclipse.core.resources.prefs</name>  
-							<content>  
-								<![CDATA[eclipse.preferences.version=1${line.separator}encoding/<project>=UTF-8${line.separator}]]>  
-							</content>  
-						</file>  
-					</additionalConfig>  
-				</configuration>  
-			</plugin>
-		</plugins>
-	</build>
+
 	<repositories>
 		<!-- repo for ace dependency -->
 		<repository>
