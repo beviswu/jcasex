@@ -16,7 +16,7 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>cn.bevisoft.jcasex</groupId>
+			<groupId>cn.jcasex</groupId>
 			<artifactId>jcasex.dal</artifactId>
 		</dependency>
 	</dependencies>

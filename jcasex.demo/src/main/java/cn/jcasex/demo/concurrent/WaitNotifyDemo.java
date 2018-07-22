@@ -14,6 +14,7 @@ public class WaitNotifyDemo {
 
     private static final Logger logger = LoggerFactory.getLogger(WaitNotifyDemo.class);
 
+
     private final static Object obj = new Object();
 
     public static void main(String[] args) throws InterruptedException {
