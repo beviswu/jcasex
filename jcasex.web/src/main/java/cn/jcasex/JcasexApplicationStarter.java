@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * Application Starter
+ * @author bobo wu
  */
 @SpringBootApplication
 public class JcasexApplicationStarter {

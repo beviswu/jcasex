@@ -7,8 +7,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * Home Controller
- * @author xubo.wuxb
- * @version $Id: HomeController.java, v 0.1 2018年07月21日 23:55 xubo.wuxb Exp $
  */
 @Controller
 public class HomeController {

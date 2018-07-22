@@ -4,10 +4,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- *
- * @author xubo.wuxb
- * @version $Id: HomeControllerTest.java, v 0.1 2018年07月22日 12:04 xubo.wuxb Exp $
- */
+ *  HomeController Test
+ **/
 public class HomeControllerTest {
 
     @Test
