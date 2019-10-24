@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- *  HomeController Test
+ *  Home Controller Test
  **/
 public class HomeControllerTest {
 
