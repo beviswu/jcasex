@@ -1,6 +1,6 @@
 jcasex
 ======
 
-java case x
+java case list
 
-privoide more java case 
+Share more Java demos and more people through open source project
