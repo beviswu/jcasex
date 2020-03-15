@@ -44,7 +44,3 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-*.iml
-/.idea/
-/.idea/**
-/**/target/
