@@ -9,17 +9,12 @@
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>jcasex.common</artifactId>
+	<artifactId>jcasex.common.integration</artifactId>
 	<packaging>jar</packaging>
-	<name>jcasex.common</name>
+	<name>jcasex common integration</name>
 
 
 	<dependencies>
-		<dependency>
-			<groupId>cn.jcasex</groupId>
-			<artifactId>jcasex.common</artifactId>
-			<version>1.0-SNAPSHOT</version>
-		</dependency>
 
 	</dependencies>
 </project>

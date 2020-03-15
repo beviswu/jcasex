@@ -9,15 +9,12 @@
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>jcasex.biz</artifactId>
+	<artifactId>jcasex.common.util</artifactId>
 	<packaging>jar</packaging>
-	<name>jcasex.biz</name>
+	<name>jcasex common util</name>
 
 
 	<dependencies>
-		<dependency>
-			<groupId>cn.jcasex</groupId>
-			<artifactId>jcasex.common.dal</artifactId>
-		</dependency>
+
 	</dependencies>
 </project>

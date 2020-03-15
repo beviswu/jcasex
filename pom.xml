@@ -13,8 +13,9 @@
         <module>./jcasex.web</module>
         <module>./jcasex.demo</module>
         <module>./jcasex.biz</module>
-        <module>./jcasex.dal</module>
-        <module>./jcasex.common</module>
+        <module>./jcasex.common.dal</module>
+        <module>./jcasex.common.util</module>
+        <module>./jcasex.common.integration</module>
     </modules>
 
     <dependencyManagement>
@@ -39,12 +40,17 @@
             </dependency>
             <dependency>
                 <groupId>cn.jcasex</groupId>
-                <artifactId>jcasex.common</artifactId>
+                <artifactId>jcasex.common.util</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>cn.jcasex</groupId>
-                <artifactId>jcasex.dal</artifactId>
+                <artifactId>jcasex.common.dal</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+               <dependency>
+                <groupId>cn.jcasex</groupId>
+                <artifactId>jcasex.common.integration</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>

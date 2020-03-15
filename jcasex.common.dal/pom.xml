@@ -9,9 +9,9 @@
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>jcasex.dal</artifactId>
+	<artifactId>jcasex.common.dal</artifactId>
 	<packaging>jar</packaging>
-	<name>jcasex.dal</name>
+	<name>jcasex common dal</name>
 
 
 	<dependencies>

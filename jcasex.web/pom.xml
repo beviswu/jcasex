@@ -49,10 +49,6 @@
             <groupId>cn.jcasex</groupId>
             <artifactId>jcasex.biz</artifactId>
         </dependency>
-        <dependency>
-            <groupId>cn.jcasex</groupId>
-            <artifactId>jcasex.common</artifactId>
-        </dependency>
     </dependencies>
 
 
