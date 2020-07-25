@@ -4,12 +4,12 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- *  Home Controller Test
+ * Home Controller Test
  **/
 public class HomeControllerTest {
 
     @Test
     public void testSayHello() {
-        Assert.assertEquals("Hello,World!",new HomeController().sayHello());
+        Assert.assertEquals("Hello,World!", new HomeController().sayHello());
     }
 }

@@ -5,12 +5,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * Application Starter
- * @author bobo wu
+ * @Author bobo wu
  */
 @SpringBootApplication
-public class JcasexApplicationStarter {
+public class JCaseXApplicationStarter {
 
     public static void main(String[] args) {
-        SpringApplication.run(JcasexApplicationStarter.class, args);
+        SpringApplication.run(JCaseXApplicationStarter.class, args);
     }
 }
